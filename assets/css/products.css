@@ -1,0 +1,386 @@
+/*==========================================================
+  WITH YOU - Luxury Perfume Store
+  PRODUCTS CSS
+  Version: 1.0
+==========================================================*/
+
+/*=========================================
+  PRODUCTS SECTION
+=========================================*/
+
+.products{
+    position:relative;
+    padding:120px 0;
+    background:var(--color-surface);
+}
+
+.products-header{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.products-header h2{
+    margin-bottom:18px;
+}
+
+.products-header p{
+    max-width:650px;
+    margin:auto;
+}
+
+/*=========================================
+  PRODUCT GRID
+=========================================*/
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+/*=========================================
+  PRODUCT CARD
+=========================================*/
+
+.product-card{
+    position:relative;
+    background:var(--color-card);
+    border-radius:24px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.4s ease;
+}
+
+.product-card:hover{
+    transform:translateY(-12px);
+    border-color:var(--color-gold);
+    box-shadow:0 25px 50px rgba(0,0,0,.35);
+}
+
+/*=========================================
+  PRODUCT IMAGE
+=========================================*/
+
+.product-image{
+    position:relative;
+    height:320px;
+    overflow:hidden;
+    background:#fff;
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    transition:.5s ease;
+}
+
+.product-card:hover .product-image img{
+    transform:scale(1.08);
+}
+
+/*=========================================
+  PRODUCT BADGE
+=========================================*/
+
+.product-badge{
+    position:absolute;
+    top:18px;
+    left:18px;
+
+    background:var(--gradient-gold);
+
+    color:#111;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:600;
+}
+
+/*=========================================
+  ACTION BUTTONS
+=========================================*/
+
+.product-actions{
+
+    position:absolute;
+
+    right:18px;
+
+    top:18px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    opacity:0;
+
+    transform:translateX(20px);
+
+    transition:.35s;
+
+}
+
+.product-card:hover .product-actions{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.product-action{
+
+    width:46px;
+
+    height:46px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.95);
+
+    color:#111;
+
+    transition:.35s;
+
+}
+
+.product-action:hover{
+
+    background:var(--color-gold);
+
+    transform:scale(1.08);
+
+}
+
+/*=========================================
+  PRODUCT INFO
+=========================================*/
+
+.product-content{
+
+    padding:25px;
+
+}
+
+.product-brand{
+
+    color:var(--color-gold);
+
+    font-size:14px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    margin-bottom:8px;
+
+}
+
+.product-title{
+
+    font-size:22px;
+
+    margin-bottom:12px;
+
+    color:#fff;
+
+}
+
+.product-description{
+
+    font-size:15px;
+
+    color:var(--color-text-light);
+
+    margin-bottom:18px;
+
+}
+
+/*=========================================
+  RATINGS
+=========================================*/
+
+.product-rating{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    margin-bottom:18px;
+
+    color:#FFD700;
+
+    font-size:14px;
+
+}
+
+/*=========================================
+  PRICE
+=========================================*/
+
+.product-price{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:25px;
+
+}
+
+.current-price{
+
+    color:var(--color-gold);
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+.old-price{
+
+    color:#888;
+
+    text-decoration:line-through;
+
+}
+
+/*=========================================
+  PRODUCT BUTTONS
+=========================================*/
+
+.product-buttons{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+.product-buttons .btn{
+
+    flex:1;
+
+}
+
+/*=========================================
+  STOCK STATUS
+=========================================*/
+
+.in-stock{
+
+    color:#2ECC71;
+
+    font-size:14px;
+
+}
+
+.out-stock{
+
+    color:#E74C3C;
+
+    font-size:14px;
+
+}
+
+/*=========================================
+  QUICK VIEW
+=========================================*/
+
+.quick-view{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:25px;
+
+    transform:translateX(-50%) translateY(20px);
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.product-card:hover .quick-view{
+
+    opacity:1;
+
+    transform:translateX(-50%) translateY(0);
+
+}
+
+/*=========================================
+  RESPONSIVE
+=========================================*/
+
+@media(max-width:1200px){
+
+    .product-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+@media(max-width:992px){
+
+    .product-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .products{
+
+        padding:80px 0;
+
+    }
+
+    .product-image{
+
+        height:280px;
+
+    }
+
+    .product-buttons{
+
+        flex-direction:column;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .product-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
