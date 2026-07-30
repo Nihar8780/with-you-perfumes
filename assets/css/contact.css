@@ -1,0 +1,264 @@
+/*==========================================================
+  WITH YOU - Luxury Perfume Store
+  CONTACT CSS
+  Version: 1.0
+==========================================================*/
+
+/*=========================================
+  CONTACT SECTION
+=========================================*/
+
+.contact{
+    position:relative;
+    padding:120px 0;
+    background:var(--color-surface);
+    overflow:hidden;
+}
+
+.contact-header{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.contact-header h2{
+    margin-bottom:18px;
+}
+
+.contact-header p{
+    max-width:700px;
+    margin:auto;
+}
+
+/*=========================================
+  CONTACT LAYOUT
+=========================================*/
+
+.contact-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:stretch;
+}
+
+/*=========================================
+  CONTACT INFO
+=========================================*/
+
+.contact-card{
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:24px;
+    padding:40px;
+    transition:.35s;
+}
+
+.contact-card:hover{
+    border-color:var(--color-gold);
+    transform:translateY(-8px);
+}
+
+.contact-card h3{
+    margin-bottom:18px;
+    color:var(--color-gold);
+}
+
+.contact-card p{
+    margin-bottom:30px;
+}
+
+/*=========================================
+  CONTACT ITEMS
+=========================================*/
+
+.contact-item{
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+    margin-bottom:25px;
+}
+
+.contact-icon{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:var(--gradient-primary);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:22px;
+    flex-shrink:0;
+}
+
+.contact-content h5{
+    margin-bottom:8px;
+    color:var(--color-white);
+}
+
+.contact-content span,
+.contact-content a{
+    color:var(--color-text-light);
+    transition:.3s;
+}
+
+.contact-content a:hover{
+    color:var(--color-gold);
+}
+
+/*=========================================
+  SOCIAL ICONS
+=========================================*/
+
+.social-links{
+    display:flex;
+    gap:15px;
+    margin-top:35px;
+}
+
+.social-links a{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(255,255,255,.08);
+    color:#fff;
+    transition:.35s;
+}
+
+.social-links a:hover{
+    background:var(--gradient-gold);
+    color:#111;
+    transform:translateY(-5px);
+}
+
+/*=========================================
+  CONTACT FORM
+=========================================*/
+
+.contact-form{
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:24px;
+    padding:40px;
+}
+
+.form-group{
+    margin-bottom:22px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:10px;
+    color:var(--color-white);
+}
+
+.form-control{
+    width:100%;
+    height:56px;
+    border-radius:14px;
+    padding:0 18px;
+    border:1px solid rgba(255,255,255,.10);
+    background:rgba(255,255,255,.05);
+    color:#fff;
+    transition:.3s;
+}
+
+textarea.form-control{
+    height:160px;
+    padding:18px;
+    resize:none;
+}
+
+.form-control:focus{
+    border-color:var(--color-gold);
+    box-shadow:0 0 15px rgba(212,175,55,.25);
+}
+
+/*=========================================
+  GOOGLE MAP
+=========================================*/
+
+.map-section{
+    margin-top:80px;
+}
+
+.map-card{
+    overflow:hidden;
+    border-radius:24px;
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:var(--shadow-lg);
+}
+
+.map-card iframe{
+    width:100%;
+    height:500px;
+    display:block;
+}
+
+/*=========================================
+  SHOWROOM BADGE
+=========================================*/
+
+.location-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:20px;
+    padding:12px 22px;
+    border-radius:999px;
+    background:rgba(212,175,55,.15);
+    color:var(--color-gold);
+    font-weight:600;
+}
+
+/*=========================================
+  RESPONSIVE
+=========================================*/
+
+@media(max-width:992px){
+
+    .contact-wrapper{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .contact{
+        padding:80px 0;
+    }
+
+    .contact-card,
+    .contact-form{
+        padding:30px;
+    }
+
+    .map-card iframe{
+        height:380px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .contact-card,
+    .contact-form{
+        padding:24px;
+    }
+
+    .contact-item{
+        flex-direction:column;
+        text-align:center;
+        align-items:center;
+    }
+
+    .social-links{
+        justify-content:center;
+    }
+
+}
