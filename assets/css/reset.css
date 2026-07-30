@@ -1,0 +1,358 @@
+/*==========================================================
+  WITH YOU - Luxury Perfume Store
+  RESET CSS
+  Version: 1.0
+==========================================================*/
+
+/* ==========================================
+   UNIVERSAL RESET
+========================================== */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================================
+   HTML
+========================================== */
+
+html{
+    scroll-behavior:smooth;
+    -webkit-text-size-adjust:100%;
+}
+
+/* ==========================================
+   BODY
+========================================== */
+
+body{
+    min-height:100vh;
+    overflow-x:hidden;
+
+    font-family:var(--font-body);
+    font-size:var(--fs-16);
+    line-height:1.6;
+
+    color:var(--color-text);
+    background:var(--color-background);
+
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+/* ==========================================
+   HEADINGS
+========================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    margin:0;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+    color:inherit;
+
+}
+
+/* ==========================================
+   PARAGRAPH
+========================================== */
+
+p{
+
+    margin:0;
+
+}
+
+/* ==========================================
+   LINKS
+========================================== */
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+    transition:var(--transition-normal);
+
+}
+
+a:hover{
+
+    text-decoration:none;
+
+}
+
+/* ==========================================
+   IMAGES
+========================================== */
+
+img,
+picture{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/* ==========================================
+   SVG
+========================================== */
+
+svg{
+
+    display:block;
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+button{
+
+    font:inherit;
+
+    color:inherit;
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    outline:none;
+
+}
+
+/* ==========================================
+   INPUT
+========================================== */
+
+input,
+textarea,
+select{
+
+    font:inherit;
+
+    color:inherit;
+
+    background:transparent;
+
+    border:none;
+
+    outline:none;
+
+}
+
+textarea{
+
+    resize:vertical;
+
+}
+
+/* ==========================================
+   FORM ELEMENTS
+========================================== */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+
+    -webkit-appearance:none;
+
+    margin:0;
+
+}
+
+input[type="number"]{
+
+    appearance:textfield;
+
+}
+
+/* ==========================================
+   LISTS
+========================================== */
+
+ul,
+ol{
+
+    list-style:none;
+
+}
+
+/* ==========================================
+   TABLE
+========================================== */
+
+table{
+
+    border-collapse:collapse;
+
+    border-spacing:0;
+
+}
+
+/* ==========================================
+   IFRAME
+========================================== */
+
+iframe{
+
+    border:none;
+
+}
+
+/* ==========================================
+   SECTION
+========================================== */
+
+section{
+
+    position:relative;
+
+    width:100%;
+
+}
+
+/* ==========================================
+   MAIN
+========================================== */
+
+main{
+
+    display:block;
+
+}
+
+/* ==========================================
+   HR
+========================================== */
+
+hr{
+
+    border:none;
+
+    height:1px;
+
+    background:var(--color-border);
+
+}
+
+/* ==========================================
+   SELECTION
+========================================== */
+
+::selection{
+
+    background:var(--color-gold);
+
+    color:var(--color-background);
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:var(--color-background);
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--color-primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--color-gold);
+
+}
+
+/* ==========================================
+   FOCUS
+========================================== */
+
+:focus-visible{
+
+    outline:2px solid var(--color-gold);
+
+    outline-offset:3px;
+
+}
+
+/* ==========================================
+   HIDDEN ATTRIBUTE
+========================================== */
+
+[hidden]{
+
+    display:none !important;
+
+}
+
+/* ==========================================
+   UTILITY
+========================================== */
+
+.clearfix::after{
+
+    content:"";
+
+    display:block;
+
+    clear:both;
+
+}
+
+.no-scroll{
+
+    overflow:hidden;
+
+}
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.text-left{
+
+    text-align:left;
+
+}
+
+.text-right{
+
+    text-align:right;
+
+}
