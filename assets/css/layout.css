@@ -1,0 +1,384 @@
+/*==========================================================
+  WITH YOU - Luxury Perfume Store
+  LAYOUT CSS
+  Version: 1.0
+==========================================================*/
+
+/*=========================================
+  MAIN CONTAINER
+=========================================*/
+
+.container{
+    width:100%;
+    max-width:var(--container-width);
+    margin-inline:auto;
+    padding-inline:20px;
+}
+
+.container-fluid{
+    width:100%;
+    padding-inline:30px;
+}
+
+/*=========================================
+  SECTIONS
+=========================================*/
+
+.section{
+    padding:var(--section-padding) 0;
+    position:relative;
+}
+
+.section-sm{
+    padding:70px 0;
+}
+
+.section-lg{
+    padding:140px 0;
+}
+
+/*=========================================
+  GRID SYSTEM
+=========================================*/
+
+.grid{
+    display:grid;
+}
+
+.grid-2{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:40px;
+}
+
+.grid-3{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.grid-4{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.grid-5{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:20px;
+}
+
+/*=========================================
+ FLEX UTILITIES
+=========================================*/
+
+.flex{
+    display:flex;
+}
+
+.flex-center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.flex-between{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.flex-around{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.flex-column{
+    display:flex;
+    flex-direction:column;
+}
+
+.align-center{
+    align-items:center;
+}
+
+.justify-center{
+    justify-content:center;
+}
+
+.justify-between{
+    justify-content:space-between;
+}
+
+/*=========================================
+  WIDTH UTILITIES
+=========================================*/
+
+.w-100{
+    width:100%;
+}
+
+.w-75{
+    width:75%;
+}
+
+.w-50{
+    width:50%;
+}
+
+.w-25{
+    width:25%;
+}
+
+/*=========================================
+  HEIGHT UTILITIES
+=========================================*/
+
+.h-100{
+    height:100%;
+}
+
+.min-vh-100{
+    min-height:100vh;
+}
+
+/*=========================================
+  GAP UTILITIES
+=========================================*/
+
+.gap-10{
+    gap:10px;
+}
+
+.gap-20{
+    gap:20px;
+}
+
+.gap-30{
+    gap:30px;
+}
+
+.gap-40{
+    gap:40px;
+}
+
+.gap-50{
+    gap:50px;
+}
+
+/*=========================================
+  MARGIN UTILITIES
+=========================================*/
+
+.mt-20{margin-top:20px;}
+.mt-30{margin-top:30px;}
+.mt-40{margin-top:40px;}
+.mt-50{margin-top:50px;}
+.mt-60{margin-top:60px;}
+.mt-80{margin-top:80px;}
+
+.mb-20{margin-bottom:20px;}
+.mb-30{margin-bottom:30px;}
+.mb-40{margin-bottom:40px;}
+.mb-50{margin-bottom:50px;}
+.mb-60{margin-bottom:60px;}
+.mb-80{margin-bottom:80px;}
+
+/*=========================================
+  PADDING UTILITIES
+=========================================*/
+
+.pt-20{padding-top:20px;}
+.pt-40{padding-top:40px;}
+.pt-60{padding-top:60px;}
+.pt-80{padding-top:80px;}
+
+.pb-20{padding-bottom:20px;}
+.pb-40{padding-bottom:40px;}
+.pb-60{padding-bottom:60px;}
+.pb-80{padding-bottom:80px;}
+
+/*=========================================
+  POSITION
+=========================================*/
+
+.relative{
+    position:relative;
+}
+
+.absolute{
+    position:absolute;
+}
+
+.fixed{
+    position:fixed;
+}
+
+.sticky{
+    position:sticky;
+    top:0;
+}
+
+/*=========================================
+  OVERFLOW
+=========================================*/
+
+.overflow-hidden{
+    overflow:hidden;
+}
+
+.overflow-auto{
+    overflow:auto;
+}
+
+/*=========================================
+  DISPLAY
+=========================================*/
+
+.d-none{
+    display:none;
+}
+
+.d-block{
+    display:block;
+}
+
+.d-inline{
+    display:inline;
+}
+
+.d-inline-block{
+    display:inline-block;
+}
+
+/*=========================================
+  BORDER RADIUS
+=========================================*/
+
+.rounded-sm{
+    border-radius:var(--radius-sm);
+}
+
+.rounded{
+    border-radius:var(--radius-md);
+}
+
+.rounded-lg{
+    border-radius:var(--radius-lg);
+}
+
+.rounded-xl{
+    border-radius:var(--radius-xl);
+}
+
+.rounded-circle{
+    border-radius:50%;
+}
+
+.rounded-pill{
+    border-radius:999px;
+}
+
+/*=========================================
+  SHADOWS
+=========================================*/
+
+.shadow-sm{
+    box-shadow:var(--shadow-sm);
+}
+
+.shadow{
+    box-shadow:var(--shadow-md);
+}
+
+.shadow-lg{
+    box-shadow:var(--shadow-lg);
+}
+
+/*=========================================
+  BACKGROUND
+=========================================*/
+
+.bg-dark{
+    background:var(--color-background);
+}
+
+.bg-surface{
+    background:var(--color-surface);
+}
+
+.bg-primary{
+    background:var(--color-primary);
+}
+
+.bg-gold{
+    background:var(--color-gold);
+}
+
+.bg-white{
+    background:var(--color-white);
+}
+
+/*=========================================
+  RESPONSIVE
+=========================================*/
+
+@media (max-width:1200px){
+
+    .grid-4{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .grid-5{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+}
+
+@media (max-width:992px){
+
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .grid-5{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .container{
+        padding-inline:18px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .grid-5{
+        grid-template-columns:1fr;
+    }
+
+    .section{
+        padding:70px 0;
+    }
+
+    .container{
+        padding-inline:16px;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .container{
+        padding-inline:15px;
+    }
+
+    .section{
+        padding:60px 0;
+    }
+
+}
