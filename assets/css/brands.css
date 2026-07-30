@@ -1,0 +1,363 @@
+/*==========================================================
+  WITH YOU - Luxury Perfume Store
+  BRANDS SECTION
+  Version: 1.0
+==========================================================*/
+
+/*=========================================
+  BRANDS SECTION
+=========================================*/
+
+.brands{
+
+    position:relative;
+
+    padding:100px 0;
+
+    background:var(--color-surface);
+
+    overflow:hidden;
+
+}
+
+/*=========================================
+  SECTION TITLE
+=========================================*/
+
+.brands-header{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.brands-header h2{
+
+    margin-bottom:18px;
+
+}
+
+.brands-header p{
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+/*=========================================
+  BRAND SLIDER
+=========================================*/
+
+.brand-slider{
+
+    position:relative;
+
+    overflow:hidden;
+
+    width:100%;
+
+}
+
+.brand-track{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+    width:max-content;
+
+    animation:brandScroll 35s linear infinite;
+
+}
+
+.brand-slider:hover .brand-track{
+
+    animation-play-state:paused;
+
+}
+
+/*=========================================
+  BRAND CARD
+=========================================*/
+
+.brand-card{
+
+    min-width:220px;
+
+    height:130px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    backdrop-filter:blur(16px);
+
+    transition:.4s;
+
+    cursor:pointer;
+
+}
+
+.brand-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--color-gold);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+
+.brand-card img{
+
+    max-width:140px;
+
+    max-height:60px;
+
+    object-fit:contain;
+
+    filter:grayscale(100%) brightness(.9);
+
+    opacity:.8;
+
+    transition:.4s;
+
+}
+
+.brand-card:hover img{
+
+    filter:none;
+
+    opacity:1;
+
+    transform:scale(1.08);
+
+}
+
+/*=========================================
+  PREMIUM BADGE
+=========================================*/
+
+.brand-badge{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    background:var(--gradient-gold);
+
+    color:#111;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+/*=========================================
+  GRADIENT EDGES
+=========================================*/
+
+.brand-slider::before,
+
+.brand-slider::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    width:120px;
+
+    height:100%;
+
+    z-index:5;
+
+    pointer-events:none;
+
+}
+
+.brand-slider::before{
+
+    left:0;
+
+    background:linear-gradient(
+        to right,
+        var(--color-surface),
+        transparent
+    );
+
+}
+
+.brand-slider::after{
+
+    right:0;
+
+    background:linear-gradient(
+        to left,
+        var(--color-surface),
+        transparent
+    );
+
+}
+
+/*=========================================
+  FEATURED BRANDS GRID
+=========================================*/
+
+.brand-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+/*=========================================
+  BRAND INFO
+=========================================*/
+
+.brand-info{
+
+    margin-top:18px;
+
+    text-align:center;
+
+}
+
+.brand-info h4{
+
+    color:var(--color-white);
+
+    margin-bottom:8px;
+
+}
+
+.brand-info span{
+
+    color:var(--color-gold);
+
+    font-size:14px;
+
+}
+
+/*=========================================
+  ANIMATION
+=========================================*/
+
+@keyframes brandScroll{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-50%);
+
+    }
+
+}
+
+/*=========================================
+  RESPONSIVE
+=========================================*/
+
+@media(max-width:1200px){
+
+    .brand-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+@media(max-width:992px){
+
+    .brand-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .brand-card{
+
+        min-width:190px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .brands{
+
+        padding:80px 0;
+
+    }
+
+    .brand-card{
+
+        min-width:170px;
+
+        height:110px;
+
+    }
+
+    .brand-card img{
+
+        max-width:110px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .brand-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .brand-track{
+
+        gap:18px;
+
+    }
+
+    .brand-card{
+
+        min-width:150px;
+
+        height:95px;
+
+    }
+
+}
