@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Wishlist | WITH YOU Luxury Perfume Store</title>
+
+    <meta name="description"
+          content="Your luxury perfume wishlist. Save your favorite fragrances and purchase them anytime.">
+
+    <link rel="icon"
+          href="assets/images/favicon.png">
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet"
+          href="assets/css/style.css">
+
+</head>
+
+<body>
+
+<!-- PRELOADER -->
+
+<div id="preloader">
+
+    <div class="loader-logo">
+
+        WITH YOU
+
+    </div>
+
+</div>
+
+<!-- HEADER -->
+
+<header class="header fixed-top">
+
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container">
+
+            <a class="navbar-brand"
+               href="index.html">
+
+                <img src="assets/images/logo.png"
+                     alt="WITH YOU"
+                     height="50">
+
+            </a>
+
+            <button class="navbar-toggler"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu">
+
+                <i class="fas fa-bars"></i>
+
+            </button>
+
+            <div class="collapse navbar-collapse"
+                 id="navbarMenu">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="index.html">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="shop.html">
+
+                            Shop
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="about.html">
+
+                            About
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="contact.html">
+
+                            Contact
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+                <div class="d-flex align-items-center gap-3">
+
+                    <a href="wishlist.html"
+                       class="active">
+
+                        <i class="fas fa-heart"></i>
+
+                    </a>
+
+                    <a href="cart.html"
+                       class="position-relative">
+
+                        <i class="fas fa-shopping-bag"></i>
+
+                        <span class="cart-count">
+
+                            0
+
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="page-hero">
+
+    <div class="container text-center">
+
+        <h1>
+
+            My Wishlist
+
+        </h1>
+
+        <p>
+
+            Save your favorite luxury fragrances for later.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- WISHLIST -->
+
+<section class="wishlist-section py-5">
+
+    <div class="container">
+
+        <!-- Empty State -->
+
+        <div id="wishlistEmpty"
+             class="text-center py-5 d-none">
+
+            <i class="fas fa-heart-crack fa-4x mb-4"></i>
+
+            <h3>
+
+                Your Wishlist is Empty
+
+            </h3>
+
+            <p>
+
+                Discover premium fragrances and add your favorites.
+
+            </p>
+
+            <a href="shop.html"
+               class="btn btn-gold mt-3">
+
+                Explore Collection
+
+            </a>
+
+        </div>
+
+        <!-- Wishlist Items -->
+
+        <div class="row g-4"
+             id="wishlistContainer">
+
+            <!-- JavaScript will render wishlist products here -->
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- NEXT PART STARTS HERE -->
