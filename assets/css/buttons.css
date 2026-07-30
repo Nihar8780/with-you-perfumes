@@ -1,0 +1,372 @@
+/*==========================================================
+  WITH YOU - Luxury Perfume Store
+  BUTTONS CSS
+  Version: 1.0
+==========================================================*/
+
+/*=========================================
+  BASE BUTTON
+=========================================*/
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+
+    min-height:56px;
+    padding:0 32px;
+
+    border:none;
+    border-radius:999px;
+
+    cursor:pointer;
+
+    font-family:var(--font-body);
+    font-size:var(--fs-16);
+    font-weight:var(--fw-semibold);
+    letter-spacing:.5px;
+
+    transition:all .35s ease;
+
+    text-decoration:none;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+/*=========================================
+  PRIMARY BUTTON
+=========================================*/
+
+.btn-primary{
+
+    background:var(--gradient-primary);
+
+    color:var(--color-white);
+
+    box-shadow:var(--shadow-primary);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 20px 40px rgba(11,93,74,.35);
+
+}
+
+/*=========================================
+  GOLD BUTTON
+=========================================*/
+
+.btn-gold{
+
+    background:var(--gradient-gold);
+
+    color:#111;
+
+    box-shadow:var(--shadow-gold);
+
+}
+
+.btn-gold:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 20px 45px rgba(212,175,55,.35);
+
+}
+
+/*=========================================
+  OUTLINE BUTTON
+=========================================*/
+
+.btn-outline{
+
+    background:transparent;
+
+    border:2px solid var(--color-gold);
+
+    color:var(--color-gold);
+
+}
+
+.btn-outline:hover{
+
+    background:var(--color-gold);
+
+    color:#111;
+
+}
+
+/*=========================================
+  DARK BUTTON
+=========================================*/
+
+.btn-dark{
+
+    background:var(--color-surface);
+
+    color:var(--color-white);
+
+}
+
+.btn-dark:hover{
+
+    background:var(--color-primary);
+
+}
+
+/*=========================================
+  LIGHT BUTTON
+=========================================*/
+
+.btn-light{
+
+    background:var(--color-off-white);
+
+    color:#111;
+
+}
+
+.btn-light:hover{
+
+    background:var(--color-gold);
+
+}
+
+/*=========================================
+  ICON BUTTON
+=========================================*/
+
+.btn-icon{
+
+    width:50px;
+
+    height:50px;
+
+    padding:0;
+
+    border-radius:50%;
+
+    background:var(--color-surface);
+
+    color:var(--color-white);
+
+}
+
+.btn-icon:hover{
+
+    background:var(--color-primary);
+
+    transform:translateY(-3px);
+
+}
+
+/*=========================================
+  SHOP NOW BUTTON
+=========================================*/
+
+.btn-shop{
+
+    background:var(--gradient-primary);
+
+    color:#fff;
+
+    padding:18px 38px;
+
+    font-size:17px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+.btn-shop:hover{
+
+    background:var(--gradient-gold);
+
+    color:#111;
+
+}
+
+/*=========================================
+  BUY NOW BUTTON
+=========================================*/
+
+.btn-buy{
+
+    width:100%;
+
+    background:var(--gradient-gold);
+
+    color:#111;
+
+}
+
+.btn-buy:hover{
+
+    transform:scale(1.02);
+
+}
+
+/*=========================================
+  ADD TO CART
+=========================================*/
+
+.btn-cart{
+
+    width:100%;
+
+    background:var(--gradient-primary);
+
+    color:#fff;
+
+}
+
+.btn-cart:hover{
+
+    opacity:.95;
+
+}
+
+/*=========================================
+  WISHLIST
+=========================================*/
+
+.btn-wishlist{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    color:var(--color-white);
+
+    backdrop-filter:blur(10px);
+
+}
+
+.btn-wishlist:hover{
+
+    color:#ff3d57;
+
+    background:#fff;
+
+}
+
+/*=========================================
+  RIPPLE EFFECT
+=========================================*/
+
+.btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    left:-100%;
+
+    background:
+    rgba(255,255,255,.18);
+
+    transform:skewX(-20deg);
+
+    transition:.6s;
+
+}
+
+.btn:hover::before{
+
+    left:120%;
+
+}
+
+/*=========================================
+  DISABLED
+=========================================*/
+
+.btn:disabled{
+
+    opacity:.5;
+
+    cursor:not-allowed;
+
+}
+
+/*=========================================
+  BUTTON GROUP
+=========================================*/
+
+.btn-group{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+/*=========================================
+  SIZES
+=========================================*/
+
+.btn-sm{
+
+    min-height:42px;
+
+    padding:0 22px;
+
+    font-size:14px;
+
+}
+
+.btn-md{
+
+    min-height:52px;
+
+    padding:0 30px;
+
+}
+
+.btn-lg{
+
+    min-height:62px;
+
+    padding:0 42px;
+
+    font-size:18px;
+
+}
+
+/*=========================================
+  RESPONSIVE
+=========================================*/
+
+@media(max-width:768px){
+
+    .btn{
+
+        width:100%;
+
+    }
+
+    .btn-group{
+
+        flex-direction:column;
+
+    }
+
+}
