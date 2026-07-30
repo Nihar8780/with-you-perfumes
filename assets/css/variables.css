@@ -1,0 +1,261 @@
+/*=========================================================
+  WITH YOU - Luxury Perfume Store
+  Design System Variables
+  Version : 1.0
+=========================================================*/
+
+:root {
+
+    /*=====================================================
+      BRAND COLORS
+    =====================================================*/
+
+    --color-primary: #0B5D4A;
+    --color-primary-light: #14775F;
+    --color-primary-dark: #084838;
+
+    --color-gold: #D4AF37;
+    --color-gold-light: #E9C86B;
+    --color-gold-dark: #B68B1F;
+
+    --color-off-white: #F9F7F2;
+
+    --color-background: #0D1117;
+    --color-surface: #151A20;
+    --color-surface-light: #1F2730;
+    --color-card: #1A2027;
+
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+
+    --color-text: #FFFFFF;
+    --color-text-light: #CFCFCF;
+    --color-text-muted: #8E8E8E;
+
+    --color-border: rgba(255,255,255,.08);
+
+    --color-success: #2ECC71;
+    --color-danger: #E74C3C;
+    --color-warning: #F39C12;
+
+    /*=====================================================
+      GRADIENTS
+    =====================================================*/
+
+    --gradient-primary:
+        linear-gradient(135deg,#0B5D4A 0%,#14775F 100%);
+
+    --gradient-gold:
+        linear-gradient(135deg,#D4AF37 0%,#F5D46A 100%);
+
+    --gradient-dark:
+        linear-gradient(180deg,#0D1117 0%,#151A20 100%);
+
+    --gradient-hero:
+        linear-gradient(
+            135deg,
+            rgba(11,93,74,.92),
+            rgba(13,17,23,.96)
+        );
+
+    /*=====================================================
+      TYPOGRAPHY
+    =====================================================*/
+
+    --font-heading: "Cinzel", serif;
+    --font-subheading: "Playfair Display", serif;
+    --font-body: "Poppins", sans-serif;
+
+    /*=====================================================
+      FONT WEIGHT
+    =====================================================*/
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /*=====================================================
+      FONT SIZE
+    =====================================================*/
+
+    --fs-12: .75rem;
+    --fs-14: .875rem;
+    --fs-16: 1rem;
+    --fs-18: 1.125rem;
+    --fs-20: 1.25rem;
+    --fs-24: 1.5rem;
+    --fs-28: 1.75rem;
+    --fs-32: 2rem;
+    --fs-40: 2.5rem;
+    --fs-48: 3rem;
+    --fs-60: 3.75rem;
+    --fs-72: 4.5rem;
+
+    /*=====================================================
+      LINE HEIGHT
+    =====================================================*/
+
+    --lh-sm: 1.2;
+    --lh-md: 1.5;
+    --lh-lg: 1.8;
+
+    /*=====================================================
+      LETTER SPACING
+    =====================================================*/
+
+    --ls-small: .5px;
+    --ls-medium: 1px;
+    --ls-large: 2px;
+    --ls-extra: 4px;
+
+    /*=====================================================
+      SPACING
+    =====================================================*/
+
+    --space-4: 4px;
+    --space-8: 8px;
+    --space-12: 12px;
+    --space-16: 16px;
+    --space-20: 20px;
+    --space-24: 24px;
+    --space-32: 32px;
+    --space-40: 40px;
+    --space-48: 48px;
+    --space-60: 60px;
+    --space-80: 80px;
+    --space-100: 100px;
+    --space-120: 120px;
+
+    /*=====================================================
+      BORDER RADIUS
+    =====================================================*/
+
+    --radius-xs: 4px;
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 30px;
+    --radius-round: 50%;
+    --radius-pill: 999px;
+
+    /*=====================================================
+      SHADOWS
+    =====================================================*/
+
+    --shadow-sm:
+        0 5px 15px rgba(0,0,0,.15);
+
+    --shadow-md:
+        0 10px 30px rgba(0,0,0,.25);
+
+    --shadow-lg:
+        0 20px 50px rgba(0,0,0,.35);
+
+    --shadow-gold:
+        0 0 25px rgba(212,175,55,.25);
+
+    --shadow-primary:
+        0 0 30px rgba(11,93,74,.35);
+
+    /*=====================================================
+      TRANSITIONS
+    =====================================================*/
+
+    --transition-fast: .25s ease;
+    --transition-normal: .35s ease;
+    --transition-slow: .6s ease;
+
+    /*=====================================================
+      CONTAINER
+    =====================================================*/
+
+    --container-width: 1400px;
+    --container-padding: 20px;
+
+    --section-padding: 100px;
+    --section-padding-mobile: 70px;
+
+    /*=====================================================
+      HEADER
+    =====================================================*/
+
+    --header-height: 90px;
+
+    /*=====================================================
+      BUTTONS
+    =====================================================*/
+
+    --button-height: 54px;
+    --button-radius: 999px;
+
+    /*=====================================================
+      Z INDEX
+    =====================================================*/
+
+    --z-loader: 99999;
+    --z-modal: 9999;
+    --z-navbar: 999;
+    --z-dropdown: 99;
+    --z-tooltip: 99999;
+
+}
+
+/*=========================================================
+  BREAKPOINTS
+=========================================================*/
+
+@media (max-width:1200px){
+
+    :root{
+
+        --container-width:1140px;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    :root{
+
+        --section-padding:80px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    :root{
+
+        --header-height:80px;
+
+        --section-padding:70px;
+
+        --fs-72:3.5rem;
+        --fs-60:3rem;
+        --fs-48:2.7rem;
+        --fs-40:2.3rem;
+        --fs-32:2rem;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    :root{
+
+        --section-padding:60px;
+
+        --fs-72:2.8rem;
+        --fs-60:2.5rem;
+        --fs-48:2.2rem;
+        --fs-40:2rem;
+        --fs-32:1.8rem;
+
+    }
+
+}
