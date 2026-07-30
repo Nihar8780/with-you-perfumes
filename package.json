@@ -1,0 +1,31 @@
+{
+  "name": "with-you-luxury-perfume-store",
+  "version": "1.0.0",
+  "description": "WITH YOU - Premium Luxury Perfume E-commerce Website",
+  "author": "WITH YOU",
+  "license": "MIT",
+  "private": true,
+  "homepage": ".",
+  "scripts": {
+    "start": "live-server",
+    "dev": "live-server",
+    "build": "echo \"Static website ready for deployment\"",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "perfume",
+    "luxury",
+    "ecommerce",
+    "html",
+    "css",
+    "bootstrap",
+    "javascript",
+    "gucci",
+    "prada",
+    "armani",
+    "zara"
+  ],
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
